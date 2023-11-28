@@ -1,0 +1,1107 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tonion</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo/logo__circle.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="assets/css/fontawesome/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Mar 09 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center justify-content-between">
+    <div class="header__left d-flex">
+      <div class="header__icon toggle-sidebar-btn d-block d-lg-none">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="header__icon header__search-toggle">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="header__search d-flex justify-content-center align-items-center">
+        <div class="header__icon header__search-return">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <form class="search-form d-flex align-items-center" method="POST" action="#">
+          <input class="txtSearch" type="text" name="query" placeholder="Tìm kiếm trên Tonion" title="Enter search keyword">
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      </div>
+
+    <div class="header__center">
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown">
+            <a href="product.html" class="nav-link "><span>Sneaker</span> 
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul>
+              <li><a href="#">Adidas</a></li>
+              <li><a href="#">Nike</a></li>
+              <li><a href="#">Van</a></li>
+              <li><a href="#">Converse</a></li>
+              <li><a href="#">Puma</a></li>
+              <li><a href="#">Rebook</a></li>
+              <li><a href="#">New Balance</a></li>
+              <li><a href="#">Fila</a></li>
+              <li><a href="#">Balenciaga</a></li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link" href="accessories.html">Phụ kiện</a></li>
+          <li><a class="nav-link" href="user.html">Trao đổi</a></li>
+          <a href="home.html" class="nav-link logo d-flex align-items-center">
+            <img src="assets/img/logo/logo__rectanguler.png" alt="">
+            <!-- <h2 class="logo__name">Tonion.</h2> -->
+          </a>
+          <li><a class="nav-link" href="promotion.html">Khuyến mãi</a></li>
+          <li><a class="nav-link" href="service.html">Dịch vụ</a></li>
+          <li><a class="nav-link" href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+
+    <div class="header__right d-flex justify-content-end">
+      <div class="header__item me-3">
+        <a href="cart-detail.html">
+          <div class="header__icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="header__badge-number">2</span>
+          </div> 
+          <div class="header__item-triangle">
+          </div>
+          <!-- HIỂN THỊ TỐI ĐA 4 MẶT HÀNG MỚI NHẤT -->
+          <!-- <div class="header__item-drop header__item-none"> -->
+          <div class="header__item-drop">
+            <div class="header__item-no-cart">
+              <img src="./assets/img/other/cart-empty.png" alt="">
+              <p>Chưa có sản phẩm</p>
+            </div>
+            <h5>Sản phẩm mới thêm vào giỏ hàng</h5>
+            <ul class="header__card">
+              <li class="header__card-item">
+                <img src="./assets/img/product/Van/Van1.1.jpg" alt="">
+                <div class="header__product-info">
+                  <p class="header__product-name">VANS SK8-HI VINTAGE POP MARSHMALLOW</p>
+                  <p class="header__product-price">2.200.000₫</p>
+                </div>
+                
+              </li>
+              <li class="header__card-item">
+                <img src="./assets/img/product/Van/Van2.jpg" alt="">
+                <div class="header__product-info">
+                  <p class="header__product-name">VANS SK8-HI CLASSIC NAVY/WHITE</p>
+                  <p class="header__product-price">2.200.000₫</p>
+                </div>
+                
+              </li>
+            </ul>
+            <div class="header__card-link">
+              <a href="cart-detail.html">Xem chi tiết giỏ hàng</a>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+      
+      <!-- ======= HEADER AUTH ======= -->
+      <div class="header__item auth-btn header__auth">
+        <div class="header__icon">
+          <i class="fa-solid fa-user"></i>
+        <!--  
+        <div class="header__item-triangle">
+        </div>
+         <div class="header__item-drop">
+          <ul class="header__option">
+            <li><a href="">
+              <i class="fa-solid fa-user"></i>
+              <span>Thông tin tài khoản</span>
+            </a></li>
+            <li><a href="">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span>Đơn hàng</span>
+            </a></li>
+            <li><a href="">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Đăng xuất</span>
+            </a></li>
+          </ul>
+          
+        </div> -->
+      </div>
+    </div>
+  </header><!-- End Header -->
+  <div class="after-header"></div>
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link " href="home.html">
+          <i class="ri-home-5-line"></i>
+          <span>Trang chủ</span>
+        </a>
+      </li><!-- End Home Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="fa-solid fa-star"></i><span>Sneaker</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span>Adidas</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-accordion.html">
+              <i class="bi bi-circle"></i><span>Nike</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-badges.html">
+              <i class="bi bi-circle"></i><span>Vans</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-breadcrumbs.html">
+              <i class="bi bi-circle"></i><span>Converse</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-buttons.html">
+              <i class="bi bi-circle"></i><span>Puma</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-list-group.html">
+              <i class="bi bi-circle"></i><span>Rebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-cards.html">
+              <i class="bi bi-circle"></i><span>New Balance</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-carousel.html">
+              <i class="bi bi-circle"></i><span>Fila</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-list-group.html">
+              <i class="bi bi-circle"></i><span>Balenciaga</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Sneaker Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-tools"></i>
+          <span>Phụ kiện</span>
+        </a>
+      </li><!-- End Services Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Trao đổi</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Khuyến mãi</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Dịch vụ</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="ri-bike-line"></i><span>Chính sách</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="forms-elements.html">
+              <i class="bi bi-circle"></i><span>Chính sách giải quyết khiếu nại</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-layouts.html">
+              <i class="bi bi-circle"></i><span>Chính sách bảo mật</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span>Chính sách đăng tin</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Bycle Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Liên hệ</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-faq.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-register.html">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-error-404.html">
+          <i class="bi bi-dash-circle"></i>
+          <span>Error 404</span>
+        </a>
+      </li><!-- End Error 404 Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-blank.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Blank</span>
+        </a>
+      </li><!-- End Blank Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <aside id="filter" class="filter">
+      <!-- Brand -->
+      <div class="filter__item filter__brand">
+        <div class="filter__title">
+          <h2>Thuơng hiệu</h2>
+        </div>
+        <div class="filter__group">
+          <div class="filter__search">
+            <input type="text" placeholder="Tìm nhanh" name="" id="">
+          </div>
+          <ul class="filter__data">
+            <li>               
+              <label for="brand1"><input type="checkbox" id="brand1">Adidas</label><br>
+            </li>
+            <li>
+              <label for="brand2"><input type="checkbox" id="brand2">Nike</label><br>
+            </li>
+            <li>
+              <label for="brand3"><input type="checkbox" id="brand3">Vans</label><br>
+            </li>
+            <li>
+              <label for="brand4"><input type="checkbox" id="brand4">Converse</label><br>
+            </li>
+            <li>
+              <label for="brand5"><input type="checkbox" id="brand5">Puma</label><br>
+            </li>
+            <li>                 
+              <label for="brand6"><input type="checkbox" id="brand6">New Balance</label><br>
+            </li>
+            <li>
+              <label for="brand7"><input type="checkbox" id="brand7">Rebook</label><br>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Price -->
+      <div class="filter__item filter__price">
+        <div class="filter__title">
+          <h2>Giá</h2>
+        </div>
+        <div class="filter__group">
+          <div class="filter__search">
+            <input type="text" placeholder="Tìm nhanh" name="" id="">
+          </div>
+          <ul class="filter__data">
+            <li>               
+              <label for="price1"><input type="checkbox" id="price1">Giá dưới 200.000đ</label><br>
+            </li>
+            <li>
+              <label for="price2"><input type="checkbox" id="price2">Từ 200.000đ - 500.000đ</label><br>
+            </li>
+            <li>
+              <label for="price3"><input type="checkbox" id="price3">Từ 500.000đ - 1.000.000đ</label><br>
+            </li>
+            <li>
+              <label for="price4"><input type="checkbox" id="price4">Từ 1.000.000đ - 3.000.000đ</label><br>
+            </li>
+            <li>
+              <label for="price5"><input type="checkbox" id="price5">Từ 3.000.000đ - 5.000.000đ</label><br>
+            </li>
+            <li>                 
+              <label for="price6"><input type="checkbox" id="price6">Giá trên 5.000.000đ</label><br>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Size -->
+      <div class="filter__item filter__size">
+        <div class="filter__title">
+          <h2>Kích thước</h2>
+        </div>
+        <div class="filter__group">
+          <div class="filter__search">
+            <input type="text" placeholder="Tìm nhanh" name="" id="">
+          </div>
+          <ul class="filter__data">
+            <li>               
+              <label for="size1"><input type="checkbox" id="size1">35</label><br>
+            </li>
+            <li>
+              <label for="size2"><input type="checkbox" id="size2">36</label><br>
+            </li>
+            <li>
+              <label for="size3"><input type="checkbox" id="size3">37</label><br>
+            </li>
+            <li>
+              <label for="size4"><input type="checkbox" id="size4">38</label><br>
+            </li>
+            <li>
+              <label for="size5"><input type="checkbox" id="size5">39</label><br>
+            </li>
+            <li>                 
+              <label for="size6"><input type="checkbox" id="size6">40</label><br>
+            </li>
+            <li>
+              <label for="size7"><input type="checkbox" id="size7">41</label><br>
+            </li>
+            <li>                 
+              <label for="size8"><input type="checkbox" id="size8">42</label><br>
+            </li>
+            <li>
+              <label for="size9"><input type="checkbox" id="size9">43</label><br>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </aside><!-- End Sidebar-->
+
+  <section class="section">
+    <div class="container-lg profile">
+      <div class="profile__left">
+        <div class="account__avatar">
+          <img src="assets/img/other/avatar.png" alt="Profile">
+          <p class="account__name">Nguyễn Trung Thành</p>
+        </div>
+        <ul class="sidebar-nav profile__nav" id="sidebar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-nav-link" data-right="#profile__edit" href="#">
+              <i class="fa-solid fa-user"></i><span>Thông tin tài khoản</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="components-nav" class="nav-content" data-bs-parent="#sidebar-nav">
+              <li>
+                <a href="#profile__edit" class="js-nav-item active" data-right="#profile__edit">
+                  <i class="bi bi-circle"></i>
+                  <span>Hồ sơ</span>
+                </a>
+              </li>
+              <li>
+                <a href="#profile__address" class="js-nav-item" data-right="#profile__address">
+                  <i class="bi bi-circle"></i>
+                  <span>Địa chỉ</span>
+                </a>
+              </li>
+              <li>
+                <a href="#change-pass" class="js-nav-item" data-right="#change-pass">
+                  <i class="bi bi-circle"></i>
+                  <span>Đổi mật khẩu</span>
+                </a>
+              </li>
+            </ul>
+          </li><!-- End Sneaker Nav -->
+
+          <li class="nav-item">
+            <a class="nav-link js-nav-link collapsed" href="#order-manager" data-right="#order-manager">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>Đơn hàng</span>
+            </a>
+          </li><!-- End Home Nav -->
+    
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-nav-link collapsed" href="#user__faq" data-right="#user__faq">
+              <i class="fa-solid fa-question"></i>
+              <span>F A Q</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link collapsed" href="home.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Đăng xuất</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="profile__right card-body pt-3">         
+        <!-- Profile Edit -->
+        <div id="profile__edit" class="profile__right-item showRight">
+          <div class="profile-heading">
+            <h1>Hồ Sơ Của Tôi</h1>
+            <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+          </div>
+          <form>
+            <div class="profile-Edit__group">
+              <div class="profile-Edit__infor">
+                <div class="profile__item">
+                  <p class="profile__title">Họ & tên</p>
+                  <div class="profile__content">
+                    <input name="txtFullName" type="text" value="Nguyễn Trung Thành" placeholder="Thêm họ tên">
+                    <p class="profile__error"></p>
+                  </div>
+                </div>
+    
+                <div class="profile__item">
+                  <p class="profile__title">Email</p>
+                  <div class="profile__content">
+                    <input name="txtEmail" type="email" value="thanhmeroy@gmail.com" placeholder="Thêm địa chỉ Email">
+                    <p class="profile__error"></p>
+                  </div>
+                </div>
+    
+                <div class="profile__item">
+                  <p class="profile__title">Số điện thoại</p>
+                  <div class="profile__content">
+                    <input name="txtPhone" type="text" value="" placeholder="Thêm số điện thoại">
+                    <p class="profile__error"></p>
+                  </div>
+                </div>
+    
+                <div class="profile__item">
+                  <p class="profile__title">Giới tính</p>
+                  <div class="profile__content">
+                    <input type="radio" name="txtGender" id="female-gender">
+                    <label for="female-gender">Nữ</label>
+                    <input type="radio" name="txtGender" id="male-gender">
+                    <label for="male-gender">Nam</label>
+                    <input type="radio" name="txtGender" id="other-gender">
+                    <label for="other-gender">Khác</label>
+                    <p class="profile__error"></p>
+                  </div>
+                </div>
+    
+                <div class="profile__item">
+                  <p class="profile__title">Ngày sinh</p>
+                  <div class="profile__content">
+                    <input type="date" name="txtDate"/>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <span class="profile__submit">Lưu thay đổi</span>
+                </div>
+              </div>
+              <div class="profile-Edit__avatar">
+                <img src="assets/img/other/avatar.png" alt="Ảnh đại diện">
+                <div class="profile-Edit__avatar-btn">
+                  <a title="Upload new profile image">
+                    <input type="file" id="uploadImg" onchange="handlePreviewAvatar(event)">
+                    <label for="uploadImg"><i class="fa-solid fa-upload"></i></label>
+                  </a>
+                  <a title="Remove my profile image" onclick="handleDeleteAvatar(event)"><i class="bi bi-trash"></i></a>
+                </div>
+              </div>
+            </div>
+
+            
+
+            
+          </form><!-- End Profile Edit Form -->
+        </div>
+
+        <!-- Profile Address -->
+        <div id="profile__address" class="profile__right-item">
+          <div class="profile-heading">
+            <h1>Địa chỉ</h1>
+            <p>Lựa chọn và thiết lập địa chỉ giao hàng</p>
+          </div>
+          <div class="profile-address__show">
+            <ul class="profile-address__list">
+              <li>
+                <div class="profile-address__left">
+                  <div class="profile-address__head">
+                    <p class="profile-address__name">Nguyễn Trung Thành</p>
+                    <p class="profile-address__phone">0981811655</p>
+                  </div>
+                  <p class="profile-address__map">21 Ngõ 59 Đường Bắc Lai Xá
+                    Xã Kim Chung, Huyện Hoài Đức, Hà Nội</p>
+                </div>
+                <div class="profile-address__right">
+                  <p class="btn__update">Chỉnh sửa</p>
+                  <p class="btn__delete">Xóa</p>
+                  <!-- <p class="btn__set-default">Đặt làm mặc định</p> -->
+                </div>
+                <span class="profile-address__tag"><i class="fa-solid fa-check"></i></span>
+              </li>
+            </ul>
+
+            <div class="profile-address__add">
+              <div class="btn__add-address" onclick="addAddress(event)">
+                <i class="fa-solid fa-plus"></i>
+                Thêm địa chỉ mới
+              </div>
+            </div>
+          </div>
+          
+          <form class="profile-address__sub-show">
+            <div class="profile-address__infor">
+              <div class="profile__item">
+                <p class="profile__title">Họ và tên</p>
+                <div class="profile__content">
+                  <input name="txtFullName" type="text" value="" placeholder="Nhập họ tên">
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+
+              <div class="profile__item">
+                <p class="profile__title">Số điện thoại</p>
+                <div class="profile__content">
+                  <input name="txtPhone" type="text" value="" placeholder="Nhập số điện thoại">
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+
+              <div class="profile__item">
+                <p class="profile__title">Tỉnh/Thành phố</p>
+                <div class="profile__content" >
+                  <select class="profile__select" name="city" id="city">
+                    <option value="0" selected>Chọn Tỉnh/Thành phố</option>
+                  </select>
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+
+              <div class="profile__item">
+                <p class="profile__title">Quận/Huyện</p>
+                <div class="profile__content" >
+                  <select class="profile__select" name="district" id="district">
+                    <option value="0" selected>Chọn Quận/Huyện</option>
+                  </select>
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+
+              <div class="profile__item">
+                <p class="profile__title">Phường/Xã</p>
+                <div class="profile__content" >
+                  <select class="profile__select" name="ward" id="ward">
+                    <option value="0" selected>Chọn Phường/Xã </option>
+                  </select>
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+  
+              <div class="profile__item mb-2">
+                <p class="profile__title">Địa chỉ cụ thể</p>
+                <div class="profile__content profile__content-address" >
+                  <textarea name="txtMap" class="form-control" placeholder="Nhập địa chỉ cụ thể" style="height: 90px"></textarea>
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+
+              <!-- <div class="profile__item">
+                <p class="profile__title"></p>
+                <div class="profile__content" >
+                  <input type="checkbox" name="txtGender" id="address_default">
+                  <label for="address_default">Đặt làm địa chỉ mặc định</label>
+                </div>
+              </div> -->
+
+              <div class="text-center">
+                <span class="profile__submit" onclick="handleAddAddress(event)">Lưu lựa chọn</span>
+              </div>
+            </div> 
+          </form><!-- End Profile Edit Form -->
+        </div>
+
+        <!-- Profile Change Pass -->
+        <div id="change-pass" class="profile__right-item">
+          <div class="profile-heading">
+            <h1>Đổi mật khẩu</h1>
+            <p>Để đảm bảo tính bảo mật vui lòng đặt mật khẩu với ít nhất 8 kí tự</p>
+          </div>
+          <form>
+            <div class="change-pass__infor">
+              <div class="profile__item">
+                <p class="profile__title">Mật khẩu cũ</p>
+                <div class="profile__content" >
+                  <input name="txtPass" type="text" placeholder="Nhập mật khẩu hiện tại">
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+
+              <div class="profile__item">
+                <p class="profile__title">Mật khẩu mới</p>
+                <div class="profile__content" >
+                  <input name="txtRePass" type="text" placeholder="Nhập mật khẩu mới">
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+  
+              <div class="profile__item">
+                <p class="profile__title">Xác nhận mật khẩu</p>
+                <div class="profile__content" >
+                  <input name="txtNewPass" type="text" placeholder="Nhập lại mật khẩu mới">
+                  <p class="profile__error"></p>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <span class="profile__submit">Đổi mật khẩu</span>
+              </div>
+            </div> 
+          </form><!-- End Profile Edit Form -->
+        </div>
+
+        <!-- Order Manager -->
+        <div id="order-manager" class="profile__right-item">
+          <div></div>
+          <ul class="nav nav-tabs order__tabs">
+            <li class="nav-item">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all-orders">Tất cả</button>
+            </li>
+  
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#order-processing">Đang xử lý</button>
+            </li>
+  
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#order-shipping">Đang vận chuyển</button>
+            </li>
+  
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#order-completed">Hoàn thành</button>
+            </li>
+  
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#order-canceled">Đã hủy</button>
+            </li>
+  
+          </ul>
+
+          <div class="tab-content order__content">
+  
+            <!-- <div class="tab-pane fade show all-orders tab-pane-none " id="all-orders"> -->
+            <div class="tab-pane fade show all-orders" id="all-orders">
+              <div class="order__empty">
+                <img src="./assets/img/other/empty-order.png" alt="Chưa có đơn hàng">
+                <p>Chưa có đơn hàng</p>
+              </div>
+  
+              <div class="order__show">
+                <ul class="order__list">
+                  <li class="order__item"><a href="#">
+                    <p class="order__code">OD05347</p>
+                    <img src="./assets/img/product/Van/Van1.jpg" alt="" class="order__img">
+                    <div class="order__info">
+                      <p class="order__name">VANS SK8-LOW VINTAGE POP MARSHMA TURT LEDOVE</p>
+                      <p class="order__option">Phân loại hàng: <span>Trắng, 40</span></p>
+                      <p class="order__quantity">Số lượng: <span>2</span></p>
+                    </div>
+                    <div class="order__price">
+                      <span class="order__price-old">2.900.000₫</span>
+                      <span class="order__price-new">1.900.000₫</span>
+                    </div>
+                    <div class="order__status order__status--complete">Hoàn thành</div>
+                  </a></li>
+
+                  <li class="order__item"><a>
+                    <p class="order__code">OD05347</p>
+                    <img src="./assets/img/product/Van/Van3.jpg" alt="" class="order__img">
+                    <div class="order__info">
+                      <p class="order__name">VANS SK8-LOW VINTAGE POP MARSHMA TURT LEDOVE</p>
+                      <p class="order__option">Phân loại hàng: <span>Trắng, 40</span></p>
+                      <p class="order__quantity">Số lượng: <span>2</span></p>
+                    </div>
+                    <div class="order__price">
+                      <span class="order__price-old">2.900.000₫</span>
+                      <span class="order__price-new">1.900.000₫</span>
+                    </div>
+                    <div class="order__status order__status--shipping">Vận chuyển</div>
+                  </a></li>
+
+                  <li class="order__item"><a>
+                    <p class="order__code">OD05347</p>
+                    <img src="./assets/img/product/Van/Van2.jpg" alt="" class="order__img">
+                    <div class="order__info">
+                      <p class="order__name">VANS SK8-LOW VINTAGE POP MARSHMA TURT LEDOVE</p>
+                      <p class="order__option">Phân loại hàng: <span>Trắng, 40</span></p>
+                      <p class="order__quantity">Số lượng: <span>2</span></p>
+                    </div>
+                    <div class="order__price">
+                      <span class="order__price-old">2.900.000₫</span>
+                      <span class="order__price-new">1.900.000₫</span>
+                    </div>
+                    <div class="order__status order__status--canceled">Đã hủy</div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="tab-pane fade tab-pane-none" id="order-processing">
+              <div class="order__empty">
+                <img src="./assets/img/other/empty-order.png" alt="Chưa có đơn hàng">
+                <p>Chưa có đơn hàng</p>
+              </div>
+  
+              <div class="order__show">
+                <ul class="order__list">
+                  <li class="order__item"><a>
+                    <p class="order__code">OD05347</p>
+                    <img src="./assets/img/product/Van/Van4.jpg" alt="" class="order__img">
+                    <div class="order__info">
+                      <p class="order__name">VANS SK8-LOW VINTAGE POP MARSHMA TURT LEDOVE</p>
+                      <p class="order__option">Phân loại hàng: <span>Trắng, 40</span></p>
+                      <p class="order__quantity">Số lượng: <span>2</span></p>
+                    </div>
+                    <div class="order__price">
+                      <span class="order__price-old">2.900.000₫</span>
+                      <span class="order__price-new">1.900.000₫</span>
+                    </div>
+                    <div class="order__status order__status--processing">Đang xử lý</div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="order-shipping">
+              <div class="order__empty">
+                <img src="./assets/img/other/empty-order.png" alt="Chưa có đơn hàng">
+                <p>Chưa có đơn hàng</p>
+              </div>
+  
+              <div class="order__show">
+                <ul class="order__list">
+                  <li class="order__item"><a>
+                    <p class="order__code">OD05347</p>
+                    <img src="./assets/img/product/Van/Van3.jpg" alt="" class="order__img">
+                    <div class="order__info">
+                      <p class="order__name">VANS SK8-LOW VINTAGE POP MARSHMA TURT LEDOVE</p>
+                      <p class="order__option">Phân loại hàng: <span>Trắng, 40</span></p>
+                      <p class="order__quantity">Số lượng: <span>2</span></p>
+                    </div>
+                    <div class="order__price">
+                      <span class="order__price-old">2.900.000₫</span>
+                      <span class="order__price-new">1.900.000₫</span>
+                    </div>
+                    <div class="order__status order__status--shipping">Vận chuyển</div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="order-completed">
+              <div class="order__empty">
+                <img src="./assets/img/other/empty-order.png" alt="Chưa có đơn hàng">
+                <p>Chưa có đơn hàng</p>
+              </div>
+  
+              <div class="order__show">
+                <ul class="order__list">
+                  <li class="order__item"><a href="#">
+                    <p class="order__code">OD05347</p>
+                    <img src="./assets/img/product/Van/Van1.jpg" alt="" class="order__img">
+                    <div class="order__info">
+                      <p class="order__name">VANS SK8-LOW VINTAGE POP MARSHMA TURT LEDOVE</p>
+                      <p class="order__option">Phân loại hàng: <span>Trắng, 40</span></p>
+                      <p class="order__quantity">Số lượng: <span>2</span></p>
+                    </div>
+                    <div class="order__price">
+                      <span class="order__price-old">2.900.000₫</span>
+                      <span class="order__price-new">1.900.000₫</span>
+                    </div>
+                    <div class="order__status order__status--complete">Hoàn thành</div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="tab-pane fade" id="order-canceled">
+              <div class="order__empty">
+                <img src="./assets/img/other/empty-order.png" alt="Chưa có đơn hàng">
+                <p>Chưa có đơn hàng</p>
+              </div>
+  
+              <div class="order__show">
+                <ul class="order__list">
+                  <li class="order__item"><a>
+                    <p class="order__code">OD05347</p>
+                    <img src="./assets/img/product/Van/Van2.jpg" alt="" class="order__img">
+                    <div class="order__info">
+                      <p class="order__name">VANS SK8-LOW VINTAGE POP MARSHMA TURT LEDOVE</p>
+                      <p class="order__option">Phân loại hàng: <span>Trắng, 40</span></p>
+                      <p class="order__quantity">Số lượng: <span>2</span></p>
+                    </div>
+                    <div class="order__price">
+                      <span class="order__price-old">2.900.000₫</span>
+                      <span class="order__price-new">1.900.000₫</span>
+                    </div>
+                    <div class="order__status order__status--canceled">Đã hủy</div>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+        <div id="user__setting"  class="profile__right-item">
+          SETTING
+
+        </div>
+
+        <div id="user__faq"  class="profile__right-item">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Laborum dolorem quam porro</h5>
+
+              <div class="accordion accordion-flush" id="faq-group-1">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-1" type="button" data-bs-toggle="collapse">
+                      Debitis adipisci eius?
+                    </button>
+                  </h2>
+                  <div id="faqsOne-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                    <div class="accordion-body">
+                      Ut quasi odit odio totam accusamus vero eius. Nostrum asperiores voluptatem eos nulla ab dolores est asperiores iure. Quo est quis praesentium aut maiores. Corrupti sed aut expedita fugit vero dolorem. Nemo rerum sapiente. A quaerat dignissimos.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-2" type="button" data-bs-toggle="collapse">
+                      Omnis fugiat quis repellendus?
+                    </button>
+                  </h2>
+                  <div id="faqsOne-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                    <div class="accordion-body">
+                      In minus quia impedit est quas deserunt deserunt et. Nulla non quo dolores minima fugiat aut saepe aut inventore. Qui nesciunt odio officia beatae iusto sed voluptatem possimus quas. Officia vitae sit voluptatem nostrum a.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-3" type="button" data-bs-toggle="collapse">
+                      Et occaecati praesentium aliquam modi incidunt?
+                    </button>
+                  </h2>
+                  <div id="faqsOne-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                    <div class="accordion-body">
+                      Voluptates magni amet enim perspiciatis atque excepturi itaque est. Sit beatae animi incidunt eum repellat sequi ea saepe inventore. Id et vel et et. Nesciunt itaque corrupti quia ducimus. Consequatur maiores voluptatum fuga quod ut non fuga.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-4" type="button" data-bs-toggle="collapse">
+                      Quo unde eaque vero dolor quis ipsam?
+                    </button>
+                  </h2>
+                  <div id="faqsOne-4" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                    <div class="accordion-body">
+                      Numquam ut reiciendis aliquid. Quia veritatis quasi ipsam sed quo ut eligendi et non. Doloremque sed voluptatem at in voluptas aliquid dolorum.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-target="#faqsOne-5" type="button" data-bs-toggle="collapse">
+                      Natus sunt quo atque mollitia accusamus?
+                    </button>
+                  </h2>
+                  <div id="faqsOne-5" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                    <div class="accordion-body">
+                      Aut necessitatibus maxime quis dolor et. Nihil laboriosam molestiae qui molestias placeat corrupti non quo accusamus. Nemo qui quis harum enim sed. Aliquam molestias pariatur delectus voluptas quidem qui rerum id quisquam. Perspiciatis voluptatem voluptatem eos. Vel aut minus labore at rerum eos.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-5 col-sm-12 footer__tonion">
+            <div class="footer-info">
+              <a href="home.html" class="logo row justify-content-center align-items-center">
+                <div class="me-2 logo__circle">
+                  <img src="assets/img/logo/logo__circle.png" alt="">
+                </div>
+                <div class="logo__rectanguler">
+                  <img src="assets/img/logo/logo__rectanguler.png" alt="">
+                </div>
+                <!-- <h2 class="logo__name">Tonion.</h2> -->
+              </a>
+              <h4 class="footer__tonion-title">Trọn vẹn từng bước chân</h4>
+              <p class="footer__tonion-text">Thấu hiểu tâm lý khách hàng để mang đến những sản phẩm chất lượng nhất.</p>
+              <div class="social-links d-flex justify-content-center">
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+    
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6 footer-links footer__about">
+            <h4>Về chúng tôi</h4>
+            <ul>
+              <li><a href="#">Giới thiệu tổng quan</a></li>
+              <li><a href="#">Điều khoản sử dụng</a></li>
+              <li><a href="#">Trung tâm hoạt động</a></li>
+              <li><a href="#">Trung tâm khách hàng</a></li>
+              <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 footer-links footer__help">
+            <h4>Hỗ trợ khách hàng</h4>
+            <ul>
+              <li><a href="#">Hotline: 0966734205</a></li>
+              <li><a href="#">Email: t.onion.2002@gmail.com</a></li>
+              <li><a href="#">Chính sách giải quyết khiếu lại</a></li>
+              <li><a href="#">Chính sách đăng tin</a></li>
+              <li><a href="#">Quy định đăng tin</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <i class="fa-regular fa-copyright"></i> 4/2023, Tonion. All Rights Reserved. Website được thiết kế bởi <a href="https://www.facebook.com/hunhbaongov">Nguyễn Trung Thành</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.addEventListener('aos:in', ({ detail }) => {
+  console.log('animated in', detail);
+});
+
+document.addEventListener('aos:out', ({ detail }) => {
+  console.log('animated out', detail);
+});
+  </script>
+
+</body>
+
+</html>
